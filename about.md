@@ -8,4 +8,4 @@ I take great pleasure in frequently partaking in videogames such as ROBLOX, arra
 I enjoy consuming cheesecakes on a daily basis, and subsuming various substances like tea and chocolate milk.
 I find society to be too uninspired and monotonous, so I strive to be as unique and exotic as I can possibly be, although I lack the courage to show my true feelings. 
 
-### put lifestyle & career alignment research summary here later
+#### put lifestyle & career alignment research summary here later
