@@ -4,6 +4,7 @@ title: About Me
 ---
 # About Me
 Hello! I am brister.
+
 I take great pleasure in frequently partaking in videogames such as ROBLOX, arras.io, and other games.
 
 I enjoy consuming cheesecakes, and subsuming various substances like tea and chocolate milk.
