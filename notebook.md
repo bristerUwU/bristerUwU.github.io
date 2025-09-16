@@ -4,7 +4,7 @@
   - [What is Flutter?](#what-is-flutter)
   - [Key Terms and Definitions](#key-terms-and-definitions)
 - [Code Definitions](#code-definitions)
-- [Flutter Definitions](#flutter-definitions)
+- [Flutter Definitions with Structure](#flutter-definitions-with-structures)
 - [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
 
 ## Flutter Notes
@@ -45,56 +45,56 @@
 
 
 ## Code Definitions
-|    Term     |                                  Definition                                   |     Base Structure / Syntax     |       Real Life Example      | App Example |
-|-------------|-------------------------------------------------------------------------------|---------------------------------|------------------------------|-------------|
-| Variable    | A named container used to store a value that may change.                      | `var x = 5;`                    | Alarm is at 6:30             |             |
-| Constant    | A fixed value that cannot change once set.                                    | `const PI = 3.14;`              | Max HP                       |             |
-| Data Type   | The kind of value a variable holds, like numbers or text.                     | `int`, `String`, `bool`         | School Address vs IP Address |             |
-| String      | A sequence of characters used to represent words or text.                     | `"Hello World"`                 | Sentences                    |             |
-| Integer     | Whole number values.                                                          | `int age = 16;`                 | Whole numbers                |             |
-| Double      | Number values with decimals.                                                  | `double age = 16.2;`            | pi                           |             |
-| Boolean     | A value that can be true or false.                                            | `bool isLoggedIn = false;`      | Are you above the age of 18? |             |
-| List        | A collection of values in a specific order.                                   | `List<String> names = [];`      | Grocery list                 |             |
-| Null        | A special value that means “nothing.”                                         | `String? name = null;`          | Undetermined date            |             |
-| Function    | A reusable block of code that performs an action.                             | `void sayHi() { print("Hi"); }` | Calculator                   |             |
-| Parameter   | The information passed into a function to change how it works.                | `greet(String name)`            |                   |             |
-| Return      | The result a function gives back.                                             | `return total;`                 |                   |             |
-| Scope       | Where a variable or function can be used.                                     | (No set syntax — concept-based) |                   |             |
-| Class       | Blueprint for creating objects with specific structure and behavior.          | `class Dog {}`                  |                   |             |
-| Object      | A specific version of a class.                                                | `Dog myDog = Dog();`            |                   |             |
-| Property    | A variable that belongs to a class/object.                                    | `String name;`                  |                   |             |
-| Method      | A function that belongs to a class.                                           | `void bark() {}`                |                   |             |
-| Constructor | A special function used to set up a class when it’s created.                  | `Dog(this.name);`               |                   |             |
-| Abstraction | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code)   |                   |             |
-| Override    | Changing how a built-in or inherited function behaves.                        | `@override`                     |                   |             |
-| Void        | A function that does not return a value.                                      | `void printMessage() {}`        |                   |             |
+|    Term     |                                  Definition                                   |     Base Structure / Syntax     |             Real Life Example         | App Example |
+|-------------|-------------------------------------------------------------------------------|---------------------------------|---------------------------------------|-------------|
+| Variable    | A named container used to store a value that may change.                      | `var x = 5;`                    | Alarm is at 6:30                      |             |
+| Constant    | A fixed value that cannot change once set.                                    | `const PI = 3.14;`              | Max HP                                |             |
+| Data Type   | The kind of value a variable holds, like numbers or text.                     | `int`, `String`, `bool`         | School Address vs IP Address          |             |
+| String      | A sequence of characters used to represent words or text.                     | `"Hello World"`                 | Sentences                             |             |
+| Integer     | Whole number values.                                                          | `int age = 16;`                 | Whole numbers                         |             |
+| Double      | Number values with decimals.                                                  | `double age = 16.2;`            | pi                                    |             |
+| Boolean     | A value that can be true or false.                                            | `bool isLoggedIn = false;`      | Are you above the age of 18?          |             |
+| List        | A collection of values in a specific order.                                   | `List<String> names = [];`      | Grocery list                          |             |
+| Null        | A special value that means “nothing.”                                         | `String? name = null;`          | Undetermined date                     |             |
+| Function    | A reusable block of code that performs an action.                             | `void sayHi() { print("Hi"); }` | Calculator                            |             |
+| Parameter   | The information passed into a function to change how it works.                | `greet(String name)`            | Numbers input into a calculator       |             |
+| Return      | The result a function gives back.                                             | `return total;`                 | The answer from the calculator        |             |
+| Scope       | Where a variable or function can be used.                                     | (No set syntax — concept-based) | A boat can only be used in water      |             |
+| Class       | Blueprint for creating objects with specific structure and behavior.          | `class Dog {}`                  | Cookie cutter                         |             |
+| Object      | A specific version of a class.                                                | `Dog myDog = Dog();`            | Different types of cookies            |             |
+| Property    | A variable that belongs to a class/object.                                    | `String name;`                  | Cookie cutter material                |             |
+| Method      | A function that belongs to a class.                                           | `void bark() {}`                | Mold cookie, bake cookie              |             |
+| Constructor | A special function used to set up a class when it’s created.                  | `Dog(this.name);`               | What shape is the cookie cutter?      |             |
+| Abstraction | Hiding the inner workings of code so users only interact with what they need. | (Concept — not specific code)   | Computer translating data into binary |             |
+| Override    | Changing how a built-in or inherited function behaves.                        | `@override`                     | Customizing game character stats      |             |
+| Void        | A function that does not return a value.                                      | `void printMessage() {}`        | Teacher giving a lecture              |             |
 
-## Flutter Definitions
+## Flutter Definitions with Structures
 
-| Term | Definition and Description | Base Structure | Real Life Example | App Example |
-|------|----------------------------|----------------|-------------------|-------------|
-|      | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` |  |  |
-|      | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` |  |  |
-|      | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` |  |  |
-|      | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` |  |  |
-|      | A widget that shows things side-by-side. | `Row(...)` |  |  |
-|      | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` |  |  |
-|      | A widget to display text on the screen. | `Text('Hello')` |  |  |
-|      | A widget to show an image using a link from the internet. | `Image.network('https://...')` |  |  |
-|      | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` |  |  |
-|      | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` |  |  |
-|      | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` |  |  |
-|      | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` |  |  |
-|      | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
-|      | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |  |  |
-|      | Aligns content in the center of the screen or container. | `Center(child: ...)` |  |  |
-|      | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` |  |  |
-|      | This marks a method as one that’s replacing a method in a parent class. | `@override` |  |  |
-|      | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
-|      | Required in every widget class to describe what to show. | `build` |  |  |
-|      | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
-|      | A keyword used to pass a value to the parent widget. | `super.key` |  |  |
-|      | A keyword that means the value won't change and is set once. | `const` |  |  |
+|      Term      |                                 Definition and Description                                  |                   Base Structure                    |    Real Life Example    | App Example |
+|-----------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------|-------------------------|-------------|
+| main()          | A function that runs when your app starts. It tells Flutter what app to show.               | `void main() => runApp(MyApp());`                   | Opening up a game       |             |
+| MaterialApp     | The widget that sets up your whole app’s look and navigation.                               | `MaterialApp(...)`                                  | Settings                |             |
+| Scaffold        | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)`                                     | Templates               |             |
+| Column          | A widget that holds and displays your content in a straight line from top to bottom.        | `Column(...)`                                       | Long division           |             |
+| Row             | A widget that shows things side-by-side.                                                    | `Row(...)`                                          | Table headers           |             |
+| Container       | A box that holds other widgets. You can add color, padding, borders, or size.               | `Container(...)`                                    | Bulletin board          |             |
+| Text            | A widget to display text on the screen.                                                     | `Text('Hello')`                                     | Words                   |             |
+| Image.network   | A widget to show an image using a link from the internet.                                   | `Image.network('https://...')`                      | Google images           |             |
+| ElevatedButton  | A clickable button that floats above content. You choose what happens when it's clicked.    | `ElevatedButton(onPressed: ..., child: ...)`        | Nuke button             |             |
+| onPressed       | The code that gets run when a button is tapped or something happens.                        | `onPressed: () => doSomething()`                    | A nuke nukes everything |             |
+| StatelessWidget | A class that creates widgets that never change. Good for static screens.                    | `class HomeScreen extends StatelessWidget`          | Image                   |             |
+| StatefulWidget  | A class for widgets that can change while the app is running.                               | `class MyWidget extends StatefulWidget`             | GIFs                    |             |
+| Navigator       | Lets you move from one screen to another using route names.                                 | `Navigator.pushNamed(context, '/about')`            |                         |             |
+| Padding         | Makes space around a widget inside its container.                                           | `Padding(padding: EdgeInsets.all(8.0), child: ...)` |                         |             |
+| Center          | Aligns content in the center of the screen or container.                                    | `Center(child: ...)`                                |                         |             |
+| Wrap            | Automatically puts widgets onto a new line when there's no space.                           | `Wrap(children: [...])`                             |                         |             |
+| @override       | This marks a method as one that’s replacing a method in a parent class.                     | `@override`                                         |                         |             |
+|                 | The special function in every widget that describes what gets drawn on the screen.          | `Widget build(BuildContext context) {...}`          |                         |             |
+| build()         | Required in every widget class to describe what to show.                                    | `build`                                             |                         |             |
+| BuildContext    | A variable that helps the widget know where it is and lets it communicate with the app.     | `BuildContext context`                              |                         |             |
+| super.key       | A keyword used to pass a value to the parent widget.                                        | `super.key`                                         |                         |             |
+| const           | A keyword that means the value won't change and is set once.                                | `const`                                             |                         |             |
 
 
 
