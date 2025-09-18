@@ -48,7 +48,7 @@
 |    Term     |                                  Definition                                   |     Base Structure / Syntax     |             Real Life Example         | App Example |
 |-------------|-------------------------------------------------------------------------------|---------------------------------|---------------------------------------|-------------|
 | Variable    | A named container used to store a value that may change.                      | `var x = 5;`                    | Alarm is at 6:30                      |             |
-| Constant    | A fixed value that cannot change once set.                                    | `const PI = 3.14;`              | Max HP                                |             |
+| Constant    | A fixed value that cannot change once set.                                    | `const PI = 3.14;`              | Max HP                                | const AppBarTheme( |
 | Data Type   | The kind of value a variable holds, like numbers or text.                     | `int`, `String`, `bool`         | School Address vs IP Address          |             |
 | String      | A sequence of characters used to represent words or text.                     | `"Hello World"`                 | Sentences                             |             |
 | Integer     | Whole number values.                                                          | `int age = 16;`                 | Whole numbers                         |             |
@@ -71,17 +71,18 @@
 
 ## Flutter Definitions with Structures
 
-|      Term      |                                 Definition and Description                                  |                   Base Structure                    |    Real Life Example    | App Example |
+|      Term       |                                 Definition and Description                                  |                   Base Structure                    |    Real Life Example    | App Example |
 |-----------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------|-------------------------|-------------|
-| main()          | A function that runs when your app starts. It tells Flutter what app to show.               | `void main() => runApp(MyApp());`                   | Opening up a game       |             |
-| MaterialApp     | The widget that sets up your whole app’s look and navigation.                               | `MaterialApp(...)`                                  | Settings                |             |
-| Scaffold        | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)`                                     | Templates               |             |
-| Column          | A widget that holds and displays your content in a straight line from top to bottom.        | `Column(...)`                                       | Long division           |             |
-| Row             | A widget that shows things side-by-side.                                                    | `Row(...)`                                          | Table headers           |             |
-| Container       | A box that holds other widgets. You can add color, padding, borders, or size.               | `Container(...)`                                    | Bulletin board          |             |
-| Text            | A widget to display text on the screen.                                                     | `Text('Hello')`                                     | Words                   |             |
-| Image.network   | A widget to show an image using a link from the internet.                                   | `Image.network('https://...')`                      | Google images           |             |
-| ElevatedButton  | A clickable button that floats above content. You choose what happens when it's clicked.    | `ElevatedButton(onPressed: ..., child: ...)`        | Nuke button             |             |
+| main()          | A function that runs when your app starts. It tells Flutter what app to show.               | `void main() => runApp(MyApp());`                   | Opening up a game       | void main() => runApp(MyPortfolioApp());            |
+| MaterialApp     | The widget that sets up your whole app’s look and navigation.                               | `MaterialApp(...)`                                  | Settings                | MaterialApp(debugShowCheckedModeBanner: false, title: 'TSA Portfolio', theme: ThemeData(            |
+| Scaffold        | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)`                                     | Templates               | Scaffold(body:            |
+| Column          | A widget that holds and displays your content in a straight line from top to bottom.        | `Column(...)`                                       | Long division           | Column(children:            |
+| Row             | A widget that shows things side-by-side.                                                    | `Row(...)`                                          | Table headers           | Row(children:            |
+| Container       | A box that holds other widgets. You can add color, padding, borders, or size.               | `Container(...)`                                    | Bulletin board          | Container(            |
+| Text            | A widget to display text on the screen.                                                     | `Text('Hello')`                                     | Words                   | Text(
+              'HI EVERYONE,\nWelcome to the', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white,)            |
+| Image.network   | A widget to show an image using a link from the internet.                                   | `Image.network('https://...')`                      | Google images           | Image.network('https://placedog.net/640/480?random', fit: BoxFit.cover,)            |
+| ElevatedButton  | A clickable button that floats above content. You choose what happens when it's clicked.    | `ElevatedButton(onPressed: ..., child: ...)`        | Nuke button             | ElevatedButton(onPressed: () => Navigator.pushNamed(context, '/background'), child: const Text('Next'),)          |
 | onPressed       | The code that gets run when a button is tapped or something happens.                        | `onPressed: () => doSomething()`                    | A nuke nukes everything |             |
 | StatelessWidget | A class that creates widgets that never change. Good for static screens.                    | `class HomeScreen extends StatelessWidget`          | Image                   |             |
 | StatefulWidget  | A class for widgets that can change while the app is running.                               | `class MyWidget extends StatefulWidget`             | GIFs                    |             |
