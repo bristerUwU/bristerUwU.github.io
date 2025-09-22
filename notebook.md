@@ -45,14 +45,14 @@
 
 
 ## Code Definitions
-|    Term     |                                  Definition                                   |     Base Structure / Syntax     |             Real Life Example         | App Example |
-|-------------|-------------------------------------------------------------------------------|---------------------------------|---------------------------------------|-------------|
-| Variable    | A named container used to store a value that may change.                      | `var x = 5;`                    | Alarm is at 6:30                      |             |
+|    Term     |                                  Definition                                   |     Base Structure / Syntax     |             Real Life Example         |    App Example    |
+|-------------|-------------------------------------------------------------------------------|---------------------------------|---------------------------------------|--------------------|
+| Variable    | A named container used to store a value that may change.                      | `var x = 5;`                    | Alarm is at 6:30                      |                    |
 | Constant    | A fixed value that cannot change once set.                                    | `const PI = 3.14;`              | Max HP                                | const AppBarTheme( |
 | Data Type   | The kind of value a variable holds, like numbers or text.                     | `int`, `String`, `bool`         | School Address vs IP Address          |             |
-| String      | A sequence of characters used to represent words or text.                     | `"Hello World"`                 | Sentences                             |             |
-| Integer     | Whole number values.                                                          | `int age = 16;`                 | Whole numbers                         |             |
-| Double      | Number values with decimals.                                                  | `double age = 16.2;`            | pi                                    |             |
+| String      | A sequence of characters used to represent words or text.                     | `"Hello World"`                 | Sentences                             | infoBox("Lorem ipsum dolor sit amet", "consectetur adipiscing elit")            |
+| Integer     | Whole number values.                                                          | `int age = 16;`                 | Whole numbers                         | SizedBox(height: 8)            |
+| Double      | Number values with decimals.                                                  | `double age = 16.2;`            | pi                                    | EdgeInsets.only(left: 100.0)            |
 | Boolean     | A value that can be true or false.                                            | `bool isLoggedIn = false;`      | Are you above the age of 18?          |             |
 | List        | A collection of values in a specific order.                                   | `List<String> names = [];`      | Grocery list                          |             |
 | Null        | A special value that means “nothing.”                                         | `String? name = null;`          | Undetermined date                     |             |
@@ -78,18 +78,18 @@
 | Scaffold        | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)`                                     | Templates               | Scaffold(body:            |
 | Column          | A widget that holds and displays your content in a straight line from top to bottom.        | `Column(...)`                                       | Long division           | Column(children:            |
 | Row             | A widget that shows things side-by-side.                                                    | `Row(...)`                                          | Table headers           | Row(children:            |
-| Container       | A box that holds other widgets. You can add color, padding, borders, or size.               | `Container(...)`                                    | Bulletin board          | Container(            |
-| Text            | A widget to display text on the screen.                                                     | `Text('Hello')`                                     | Words                   | Text(
-              'HI EVERYONE,\nWelcome to the', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white,)            |
+| Container       | A box that holds other widgets. You can add color, padding, borders, or size.               | `Container(...)`                                    | Bulletin board          | Container(width: 160           |
+| Text            | A widget to display text on the screen.                                                     | `Text('Hello')`                                     | Words                   | Text('HI EVERYONE,\nWelcome to the', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white,)            |
 | Image.network   | A widget to show an image using a link from the internet.                                   | `Image.network('https://...')`                      | Google images           | Image.network('https://placedog.net/640/480?random', fit: BoxFit.cover,)            |
 | ElevatedButton  | A clickable button that floats above content. You choose what happens when it's clicked.    | `ElevatedButton(onPressed: ..., child: ...)`        | Nuke button             | ElevatedButton(onPressed: () => Navigator.pushNamed(context, '/background'), child: const Text('Next'),)          |
-| onPressed       | The code that gets run when a button is tapped or something happens.                        | `onPressed: () => doSomething()`                    | A nuke nukes everything |             |
+| onPressed       | The code that gets run when a button is tapped or something happens.                        | `onPressed: () => doSomething()`                    | A nuke nukes everything | onPressed: () => Navigator.pushNamed(context, '/showcase')            |
 | StatelessWidget | A class that creates widgets that never change. Good for static screens.                    | `class HomeScreen extends StatelessWidget`          | Image                   |             |
-| StatefulWidget  | A class for widgets that can change while the app is running.                               | `class MyWidget extends StatefulWidget`             | GIFs                    |             |
-| Navigator       | Lets you move from one screen to another using route names.                                 | `Navigator.pushNamed(context, '/about')`            | Navigating between pages|             |
+| StatefulWidget  | A class for widgets that can change while the app is running.                               | `class MyWidget extends StatefulWidget`             | GIFs                    | Not applicable. |
+| Navigator       | Lets you move from one screen to another using route names.                                 | `Navigator.pushNamed(context, '/about')`            | Navigating between pages| Navigator.pushNamed(context, '/showcase')            |
 | Padding         | Makes space around a widget inside its container.                                           | `Padding(padding: EdgeInsets.all(8.0), child: ...)` | Gaps between posters    |             |
 | Center          | Aligns content in the center of the screen or container.                                    | `Center(child: ...)`                                | Center                  |             |
-| Wrap            | Automatically puts widgets onto a new line when there's no space.                           | `Wrap(children: [...])`                             | Google Docs newline     |             |
+| Wrap            | Automatically puts widgets onto a new line when there's no space.                           | `Wrap(children: [...])`                             | Google Docs newline     | Wrap(
+              alignment: WrapAlignment.center            |
 | @override       | This marks a method as one that’s replacing a method in a parent class.                     | `@override`                                         |                         |             |
 | build method    | The special function in every widget that describes what gets drawn on the screen.          | `Widget build(BuildContext context) {...}`          |                         |             |
 | build()         | Required in every widget class to describe what to show.                                    | `build`                                             |                         |             |
