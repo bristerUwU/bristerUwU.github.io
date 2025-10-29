@@ -78,6 +78,13 @@
 | input nextBoolean    | reads in a boolean (true/false) from the user              | input.nextBoolean();                                     |           |             |
 | Arithmetic operators | + - * / / % (modulus, returns the remainder from dividing) |                                                          |           |             |
 | Compound operators   | += -= *= /= %= ++ (applies the result to the variable)     |                                                          |           |             |
+| Maximum int          | The max value an int can hold: 2147483647                  | Integer.MAX_VALUE                                        |           |             |
+| Minimum int          | The minimum value an int can hold: -2147483648             | Integer.MIN_VALUE                                        |           |             |
+| integer overflow     | Int MAX_VALUE + 1 == MIN_VALUE, it wraps around            |                                                          |           |             |
+| integer underflow    | When the result is below MIN_Value, it wraps around        |                                                          |           |             |
+| round-off error      | an approx. of the actual value, result is rounded to the nearest value that fits within the available bits     ||           |             |
+
+
 
 ## Flutter Definitions with Structures
 
