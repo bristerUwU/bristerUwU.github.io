@@ -81,9 +81,12 @@
 | Maximum int          | The max value an int can hold: 2147483647                  | Integer.MAX_VALUE                                        |           |             |
 | Minimum int          | The minimum value an int can hold: -2147483648             | Integer.MIN_VALUE                                        |           |             |
 | integer overflow     | Int MAX_VALUE + 1 == MIN_VALUE, it wraps around            |                                                          |           |             |
-| integer underflow    | When the result is below MIN_Value, it wraps around        |                                                          |           |             |
+| integer underflow    | When the result is below MIN_Value, it wraps around        |                                                          |           |             | 
 | round-off error      | an approx. of the actual value, result is rounded to the nearest value that fits within the available bits     ||           |             |
-
+| Overloaded method/function or constructor    | Uses the same name, but has different parameters | Pizza(), Pizza(String toppings) 2 constructors, first is a default cheese pizza, 2nd has 1 topping |           |             |
+| dot notation    | Methods are called on objects using a dot after the object name | object.method(value); |           |             |
+| Concatenate | to combine strings with other strings and or variables | String greeeting = "My name is " + name + "."; | | |
+| | | | | |
 
 
 ## Flutter Definitions with Structures
