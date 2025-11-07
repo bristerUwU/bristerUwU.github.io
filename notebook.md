@@ -4,6 +4,7 @@
   - [What is Flutter?](#what-is-flutter)
   - [Key Terms and Definitions](#key-terms-and-definitions)
 - [Code Definitions](#code-definitions)
+  - [String Notes](#string-notes)
 - [Flutter Definitions with Structure](#flutter-definitions-with-structures)
 - [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
 
@@ -87,6 +88,9 @@
 | dot notation    | Methods are called on objects using a dot after the object name | object.method(value); |           |             |
 | Concatenate | to combine strings with other strings and or variables | String greeeting = "My name is " + name + "."; | | |
 | | | | | |
+
+### String Notes
+Strings have indices (plural for index,) which start at 0. "Hello" has indices 0(H), 1(e), 2(l), 3(l), 4(o).
 
 
 ## Flutter Definitions with Structures
