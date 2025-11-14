@@ -5,6 +5,7 @@
   - [Key Terms and Definitions](#key-terms-and-definitions)
 - [Code Definitions](#code-definitions)
   - [String Notes](#string-notes)
+  - [String Methods Table](#string-methods-table)
 - [Flutter Definitions with Structure](#flutter-definitions-with-structures)
 - [Notebook Style Guide](#markdown-style-guide-for-coding-notebooks)
 
@@ -89,11 +90,18 @@
 | Concatenate | to combine strings with other strings and or variables | String greeeting = "My name is " + name + "."; | | |
 | Algorithms | Define step by step processes to follow when completing a task or solving a problem | no syntax | Make a grilled cheese | Verify user |
 | Sequencing | Define an order for when steps in an algorithm are completed | Follows 1, 2, 3 | which step comes first in making a grilled cheese | Get bread, add butter, add cheese |
+| index | location value of each character in a String or list, starting at 0 | "Hello" index of 'e' is 1 | | |
+| Substring | Part of a larger String | "llo" is a subString of "Hello" | | |
 | | | | | |
 
 ### String Notes
-Strings have indices (plural for index,) which start at 0. "Hello" has indices 0(H), 1(e), 2(l), 3(l), 4(o).
+- Strings have indices (plural for index,) which start at 0. "Hello" has indices 0(H), 1(e), 2(l), 3(l), 4(o).
+- Final index in a String is length - 1;
 
+### String Methods Table
+
+<img width="2427" height="1026" alt="image" src="https://github.com/user-attachments?assets/923740f7-71ad-411e-8e98-884e1a6ef94d" />
+  
 
 ## Flutter Definitions with Structures
 
